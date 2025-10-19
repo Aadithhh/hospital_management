@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h1>🏥 Hospital Manager</h1>
+        <div>
+            <a href="/">Dashboard</a>
+            <a href="/patients">Patients</a>
+            <a href="/doctors">Doctors</a>
+            <a href="/appointments">Appointments</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2>Welcome to the Hospital Management System</h2>
+        <p>Manage all your hospital activities in one place — from patient details to doctor appointments.</p>
+
+        <!-- Dashboard Cards -->
+        <div class="dashboard">
+            <div class="card">
+                <h3>👩‍⚕️ Patients</h3>
+                <p>View and manage patient records.</p>
+                <a href="/patients"><button>View Patients</button></a>
+            </div>
+
+            <div class="card">
+                <h3>🩺 Doctors</h3>
+                <p>See all doctors and their specializations.</p>
+                <a href="/doctors"><button>View Doctors</button></a>
+            </div>
+
+            <div class="card">
+                <h3>📅 Appointments</h3>
+                <p>Track and manage appointments easily.</p>
+                <a href="/appointments"><button>Manage Appointments</button></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
